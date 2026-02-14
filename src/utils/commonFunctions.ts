@@ -15,6 +15,13 @@ export class CommonFunctions {
         await expect(this.page).toHaveURL(expectedUrl);
     }
 
+    /**
+     * @description Here we use async function and if else for locating expected text and unexpected
+     *
+     * @param locator 
+     * @param expectedText 
+     * @param partialMatch 
+     */
     async verifyTextOfAnElement (locator: Locator, expectedText: string, partialMatch: boolean = false) {
         if (partialMatch) {
             await expect(locator).toContainText(expectedText);
