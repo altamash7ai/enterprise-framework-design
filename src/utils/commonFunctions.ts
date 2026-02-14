@@ -30,4 +30,5 @@ export class CommonFunctions {
     }
 
     //asdfghjkjhgf
+    // TODO: Function which clicks an element
 }
