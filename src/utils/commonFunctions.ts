@@ -28,4 +28,6 @@ export class CommonFunctions {
             await expect(locator).toHaveText(expectedText);
         }
     }
+
+    //asdfghjkjhgf
 }
