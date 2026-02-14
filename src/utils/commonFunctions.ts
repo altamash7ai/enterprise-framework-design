@@ -28,7 +28,4 @@ export class CommonFunctions {
             await expect(locator).toHaveText(expectedText);
         }
     }
-
-    //asdfghjkjhgf
-    // TODO: Function which clicks an element
 }
