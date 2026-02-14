@@ -7,6 +7,10 @@ export class CommonFunctions {
         this.page = page;
     }
 
+    /**
+     * @description Verifies the URL of the current page
+     * @param expectedUrl URL to be asserted
+     */
     async verifyPageUrl (expectedUrl: string) {
         await expect(this.page).toHaveURL(expectedUrl);
     }
