@@ -15,6 +15,12 @@ export class CommonFunctions {
         await expect(this.page).toHaveURL(expectedUrl);
     }
 
+    /**
+     * @description Verifies the text of an element
+     * @param locator The element whose text is to be verified
+     * @param expectedText text to be asserted
+     * @param partialMatch Whether to match partially or no
+     */
     async verifyTextOfAnElement (locator: Locator, expectedText: string, partialMatch: boolean = false) {
         if (partialMatch) {
             await expect(locator).toContainText(expectedText);
